@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1553009732 source:f:\aprogrammin'\facultateanu1\sem ii\poo\tema1-proiect\main.cpp
+	<iostream>
+	"graf.h"
+
+1553008086 f:\aprogrammin'\facultateanu1\sem ii\poo\tema1-proiect\graf.h
+	"lista.h"
+
+1553010080 f:\aprogrammin'\facultateanu1\sem ii\poo\tema1-proiect\lista.h
+	"nod.h"
+
+1553005344 f:\aprogrammin'\facultateanu1\sem ii\poo\tema1-proiect\nod.h
+
+1553452284 source:d:\aprogrammin'\facultateanu1\sem ii\poo\tema1-proiect\main.cpp
+	<iostream>
+	"graf.h"
+
+1553452906 d:\aprogrammin'\facultateanu1\sem ii\poo\tema1-proiect\graf.h
+	"lista.h"
+
+1553452806 d:\aprogrammin'\facultateanu1\sem ii\poo\tema1-proiect\lista.h
+	"nod.h"
+
+1553443849 d:\aprogrammin'\facultateanu1\sem ii\poo\tema1-proiect\nod.h
+
+1553374069 d:\aprogrammin'\facultateanu1\sem ii\poo\tema1-proiect\stiva.h
+
+1553453372 source:d:\aprogrammin'\facultateanu1\sem ii\poo\tema1-proiect\graf.cpp
+	<iostream>
+	<stdexcept>
+	"graf.h"
+
+1553444853 source:d:\aprogrammin'\facultateanu1\sem ii\poo\tema1-proiect\nod.cpp
+	<iostream>
+	"nod.h"
+
+1553452816 source:d:\aprogrammin'\facultateanu1\sem ii\poo\tema1-proiect\lista.cpp
+	<iostream>
+	"lista.h"
+

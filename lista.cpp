@@ -36,19 +36,34 @@ void Lista::print() {
 		cout << p->getInfo() << " ";
 		p = p->getNext();
 	}
-	cout << std::endl;
+	cout << endl;
 }
-
+/* insertInOrder este o functie ce nu ordoneaza, doar
+pune un element inaintea primului element mai mare ca el
+sau, in cazul in care e egal, iese din functie si nu returneaza nimic,
+deoarece se incearca adaugarea unui nod existent
+*/
 void Lista::insertInOrder(int x) {
+/*in cazul in care aceasta este primul nod pus in lista,
+initializam lista cu acest prim element
+*/
     if (start == NULL) {
 		start = end = new Nod(x, NULL);
 		size = 1;
 		return;
 	}
     Nod* p = start;
+/*avansam in lista pana gasim un element mai mare sau egal cu x*/
     while (p != NULL && x > p->getInfo()) {
         p = p->getNext();
     }
+/*daca avem elementul gasit egal iesim din functie si nu returnam
+nimic, deoarece ar fi redundant sa adaugam un element existent in lista
+*/
+    if (x == p->getInfo()) {
+        return;
+    }
+/*daca am ajuns la capatul listei, adaugam elementul la final*/
     if (p == NULL) {
         Nod* o = new Nod(x, NULL);
         end->setNext(o);
@@ -56,15 +71,16 @@ void Lista::insertInOrder(int x) {
         size++;
         return;
     }
-    if (x == p->getInfo()) {
-        return;
-    }
+/*daca nu am avansat, adaugam elementul in capul listei*/
     if (p == start) {
         Nod* o = new Nod(x, start);
         start = o;
         size++;
         return;
     }
+/*daca nu ne aflam nici la inceput, nici la final, declaram un auxiliar
+pentru a parcurge lista pana la elementul anterior celui curent, si a il lega
+pe cel curent la lista*/
     Nod *aux = start;
     while (aux->getNext() != p) {
         aux = aux->getNext();

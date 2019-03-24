@@ -1,4 +1,3 @@
-/// comentarii......
 #include <iostream>
 #include "graf.h"
 

@@ -7,10 +7,10 @@ public:
 	Lista();
 	Lista(int);
 	Lista(Lista&);
-	Nod* getStart();
-	void insert(int);
-	void insertAt(int, unsigned int);
-	void insertInOrder(int);
+	Nod* getStart();                        //returneaza primul nod din listsa
+	void insert(int);                       //insereaza la finalul listei
+	void insertAt(int, unsigned int);       //insereaza la pozitia data
+	void insertInOrder(int);                //insereaza elemente in ordine crescatoare
 	void print();
 	int get(unsigned int);
 	unsigned length();
